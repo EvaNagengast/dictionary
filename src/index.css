@@ -1,0 +1,54 @@
+:root {
+  ---primeOne: #d13777;
+  ---primeOneOP2: #d8973c;
+  ---primeTwo: #f8bdc4;
+  ---addOnOP2: #c5decd;
+  ---addOnOne: #bfae48;
+  ---addOnTwo: #bbbe64;
+  ---addOnThree: #a4baa6;
+  ---addOnFour: #d2f1e4;
+  ---addOnFive: #c4d6b0;
+}
+.App header {
+  background-image: url("./media/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  text-align: center;
+  color: var(---addOnFive);
+  padding: 20px;
+}
+.App .headercontent {
+  background-color: #fff8ec;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5px;
+}
+.App main {
+  min-height: 250px;
+}
+.App footer {
+  background-image: url("./media/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  text-align: center;
+  color: var(---addOnFive);
+  padding: 20px;
+}
+
+.App footer a {
+    text-decoration: none;
+  color: var(---primeTwo);
+}
+.App footer a:hover {
+    text-decoration: none;
+  color: var(---primeOne);
+}
+
+.App footer .footercontent {
+    background-color: #fff8ec;
+      width: fit-content;
+  margin: 0 auto;
+  padding: 5px;
+}
