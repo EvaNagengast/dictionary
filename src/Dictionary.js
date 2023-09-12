@@ -10,6 +10,7 @@ export default function Dictionary() {
 
   function handleResponse(response) {
     setWord(response.data[0]);
+    console.log(word)
   }
   function handleInput(input) {
     setSearchItem (input.target.value);
