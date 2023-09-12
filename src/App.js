@@ -9,11 +9,25 @@ function App() {
         <p>description</p>{" "}
       </header>
       <main>
-        <Dictionary/>
+        <Dictionary />
       </main>
       <footer>
-        coded with ? by <a href="">Eva Nagengast</a>, open sourced on
-        <a>GitHub</a>
+        coded with ? by{" "}
+        <a
+          href="https://linkedin.com/in/eva-nagengast-9b78b220a"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Eva Nagengast
+        </a>
+        , open sourced on
+        <a
+          href="https://github.com/EvaNagengast/dictionary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
       </footer>
     </div>
   );
