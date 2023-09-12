@@ -1,23 +1,26 @@
 import React, { useState } from "react";
-import "./Dictionary.css";
 import axios from "axios";
+import Results from "./Results";
+
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [searchItem, setSearchItem] = useState("");
+    let [word, setWord] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0].phonetic);
+    setWord(response.data[0]);
   }
   function handleInput(input) {
-    let inputWord = input.target.value;
+    setSearchItem (input.target.value);
 
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${inputWord}`;
-    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    setSearchItem("hello");
+   // documenation: https://dictionaryapi.dev/
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchItem}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   return (
@@ -29,8 +32,10 @@ export default function Dictionary() {
           autoComplete="none"
           onChange={handleInput}
         ></input>
+
       </form>
-      <p>{searchItem}</p>
+      <Results word={word}/>
+     
     </div>
   );
 }
