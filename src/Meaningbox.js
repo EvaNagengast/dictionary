@@ -3,14 +3,12 @@ import React from "react";
 import "./Meaningbox.css";
 
 export default function Meaningbox(props) {
-  console.log(props.allMeanings);
+//   console.log(props.allMeanings);
   return (
     <div className="Meaningbox">
-      {" "}
       <h3>{props.allMeanings.partOfSpeech}</h3>
-      
-      {props.allMeanings.definition}
 
+      {props.allMeanings.definition}
     </div>
   );
 }
