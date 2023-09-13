@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-
+import Phonetics from "./Phonetics"; 
 import "./Dictionary.css";
 
 export default function Dictionary() {
@@ -18,13 +18,13 @@ export default function Dictionary() {
   function handleSubmit(event) {
     event.preventDefault();
     // documenation: https://www.shecodes.io/learn/apis/dictionary/
-    let apiKey = `ef85b2a56a7f4e1tc1e01fdofd0bbc3b`;
+    let apiKey = `68c9ef64a34aca6bcd501b08f5caotf8`;
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchItem}&key=${apiKey}`;
 
     axios.get(apiUrl).then(handleResponse);
   }
   //   console.log(searchItem);
-//   console.log(wordInfo);
+  //   console.log(wordInfo);
   return (
     <div className="Dictionary">
       <form onSubmit={handleSubmit}>
@@ -36,6 +36,7 @@ export default function Dictionary() {
         ></input>
       </form>
       <h2>{wordInfo.word}</h2>
+      <Phonetics wordinfo={wordInfo}/>
       <Results wordinfo={wordInfo} />
     </div>
   );
