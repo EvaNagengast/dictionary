@@ -6,24 +6,25 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [searchItem, setSearchItem] = useState("");
-    let [word, setWord] = useState(null);
+  let [wordInfo, setWordInfo] = useState("");
 
   function handleResponse(response) {
-    setWord(response.data[0]);
-    console.log(word)
+    setWordInfo(response.data);
   }
   function handleInput(input) {
-    setSearchItem (input.target.value);
-
+    setSearchItem(input.target.value);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-   // documenation: https://dictionaryapi.dev/
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchItem}`;
+    // documenation: https://www.shecodes.io/learn/apis/dictionary/
+    let apiKey = `ef85b2a56a7f4e1tc1e01fdofd0bbc3b`;
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchItem}&key=${apiKey}`;
+
     axios.get(apiUrl).then(handleResponse);
   }
-
+  //   console.log(searchItem);
+//   console.log(wordInfo);
   return (
     <div className="Dictionary">
       <form onSubmit={handleSubmit}>
@@ -33,10 +34,9 @@ export default function Dictionary() {
           autoComplete="none"
           onChange={handleInput}
         ></input>
-
       </form>
-      <Results word={word}/>
-     
+      <h2>{wordInfo.word}</h2>
+      <Results wordinfo={wordInfo} />
     </div>
   );
 }
