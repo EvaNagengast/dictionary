@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Audioplayer from "./Audioplayer";
 import axios from "axios";
 import "./Phonetics.css";
 
@@ -35,8 +36,9 @@ export default function Phonetics(props) {
                   displayedTexts.push(secondarray.text);
                   return (
                     <div key={index + 20}>
+                      {/* <div>{secondarray.audio}</div>{" "} */}
                       <div>{secondarray.text}</div>
-                      <div>{secondarray.audio}</div>
+                      <Audioplayer link={secondarray.audio} />
                     </div>
                   );
                 } else {
