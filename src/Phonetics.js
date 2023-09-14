@@ -37,7 +37,7 @@ export default function Phonetics(props) {
                   return (
                     <div key={index + 20}>
                       {/* <div>{secondarray.audio}</div>{" "} */}
-                   
+
                       <Audioplayer
                         link={secondarray.audio}
                         text={secondarray.text}
