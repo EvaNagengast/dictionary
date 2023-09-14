@@ -1,0 +1,44 @@
+.Audioplayer .audioImage {
+  height: 100px;
+}
+.Audio {
+  background-color: red;
+  color: green;
+}
+.rhap_container {
+  height: 100px;
+  padding: 0;
+}
+.rhap_container,
+.rhap_container:focus {
+  background-color: rgba(255, 0, 0, 0);
+  outline: none;
+}
+
+.rhap_container svg {
+  color: #eb4d2b;
+}
+
+.rhap_container .rhap_progress-indicator {
+  background: #e18080;
+}
+.rhap_download-progress {
+  background-color: #eb4e2b7f;
+}
+
+.rhap_progress-filled {
+  background-color: #eb4e2bf3;
+}
+
+.Audioplayer img {
+  height: 100px;
+  overflow-clip-margin: 20px !important;
+  overflow: visible;
+}
+
+.rhap_button-clear {
+  overflow: visible;
+}
+.rhap_controls-section {
+  align-items: start;
+}
