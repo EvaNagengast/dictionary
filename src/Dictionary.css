@@ -1,1 +1,24 @@
+.Dictionary form {
+  font-size: 20px;
+}
+
+.Dictionary form input {
+  border: none;
+  background-color: var(---webOne);
+  box-shadow: 1px 1px 6px #dbb3b78b;
+  text-align: center;
+  color: var(---webTwo);
+}
+.Dictionary form input:focus {
+  outline: 2px solid #dbb3b78b;
+}
+.Dictionary form .inputButton {
+  border: none;
+  box-shadow: 1px 1px 6px #dbb3b78b;
+}
+
+.Dictionary h2 {
+  text-align: center;
+  font-size: 70px;
+}
 

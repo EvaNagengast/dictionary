@@ -1,26 +1,21 @@
-.Audioplayer .audioImage {
+.Audioplayer img {
   height: 100px;
+  overflow: visible;
+  overflow-clip-margin: 20px !important;
 }
-.Audio {
-  background-color: red;
-  color: green;
-}
+
 .rhap_container {
   height: 100px;
+  width: 40%;
+  margin: 0 auto;
   padding: 0;
+
+  text-align: center;
 }
 .rhap_container,
 .rhap_container:focus {
-  background-color: rgba(255, 0, 0, 0);
   outline: none;
-}
-
-.rhap_container svg {
-  color: #eb4d2b;
-}
-
-.rhap_container .rhap_progress-indicator {
-  background: #e18080;
+  background-color: rgba(255, 0, 0, 0);
 }
 .rhap_download-progress {
   background-color: #eb4e2b7f;
@@ -30,15 +25,17 @@
   background-color: #eb4e2bf3;
 }
 
-.Audioplayer img {
-  height: 100px;
-  overflow-clip-margin: 20px !important;
-  overflow: visible;
-}
-
 .rhap_button-clear {
   overflow: visible;
 }
 .rhap_controls-section {
   align-items: start;
+}
+
+.rhap_container svg {
+  color: #eb4d2b;
+}
+
+.rhap_container .rhap_progress-indicator {
+  background: #e18080;
 }

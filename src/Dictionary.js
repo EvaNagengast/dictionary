@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-import Phonetics from "./Phonetics"; 
+import Phonetics from "./Phonetics";
 import "./Dictionary.css";
 
 export default function Dictionary() {
@@ -23,20 +23,23 @@ export default function Dictionary() {
 
     axios.get(apiUrl).then(handleResponse);
   }
-  //   console.log(searchItem);
-  //   console.log(wordInfo);
+  //
   return (
     <div className="Dictionary">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="mt-3 text-center">
+        <label className="d-block m-3">
+          what word are you looking for today?
+        </label>
         <input
           type="text"
           autoFocus="on"
           autoComplete="none"
           onChange={handleInput}
-        ></input>
+        />
+        <input type="submit" value="go" className="inputButton mx-3" />
       </form>
       <h2>{wordInfo.word}</h2>
-      <Phonetics wordinfo={wordInfo}/>
+      <Phonetics wordinfo={wordInfo} />
       <Results wordinfo={wordInfo} />
     </div>
   );

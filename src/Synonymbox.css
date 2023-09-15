@@ -1,1 +1,3 @@
-strong {color:blue}
+.Synonymbox {
+  color: var(---primeTwo);
+}

@@ -1,0 +1,39 @@
+.App header {
+  min-height: 150px;
+}
+
+.App header h1 {
+  font-size: 100px;
+  color: var(---primeOne);
+  font-family: var(---curlyFont);
+  text-shadow: 1px 1px 0px var(---webOne), 3px 3px 8px var(---primeTwo);
+}
+.App main {
+  min-height: 250px;
+}
+.App footer {
+  max-height: 150px;
+  font-size: 20px;
+}
+
+.App footer a {
+  text-decoration: none;
+  color: var(---primeOne);
+}
+.App footer a:hover {
+  color: var(---primeDark);
+}
+
+.App header,
+.App footer {
+  background-image: url("./media/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App footer .footercontent,
+.App header .headercontent {
+  margin: 0 auto;
+  width: fit-content;
+  background-color: #fff8ecdb;
+}

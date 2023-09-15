@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Audioplayer from "./Audioplayer";
 import axios from "axios";
-import "./Phonetics.css";
+
 
 export default function Phonetics(props) {
   let [phoneticWord, setPhoneticWord] = useState("fingers");
@@ -27,7 +27,7 @@ export default function Phonetics(props) {
   if (loaded && phoneticWord) {
     const displayedTexts = [];
     return (
-      <div>
+      <div className="Phonetics">
         {phoneticWord.data.map(function (array, index) {
           return (
             <div key={index}>
@@ -36,8 +36,6 @@ export default function Phonetics(props) {
                   displayedTexts.push(secondarray.text);
                   return (
                     <div key={index + 20}>
-                      {/* <div>{secondarray.audio}</div>{" "} */}
-
                       <Audioplayer
                         link={secondarray.audio}
                         text={secondarray.text}
@@ -57,6 +55,3 @@ export default function Phonetics(props) {
     return null;
   }
 }
-// return("summer")
-// let [phoneticsaudio, setPhoneticsAudio] =useState("")
-// <div className="PhoneticAudio"> audiotag src={phoneticsaudio} </div>

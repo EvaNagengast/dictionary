@@ -4,17 +4,16 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
-      <header>
-        <div className="headercontent">
+      <header className="p-4 text-center">
+        <div className="headercontent p-4">
           <h1>Dictionary</h1>
-          <p>description</p>
-        </div>
+               </div>
       </header>
       <main className="container">
         <Dictionary />
       </main>
-      <footer>
-        <div className="footercontent">
+      <footer className="p-3">
+        <div className="footercontent p-1">
           coded with love by{" "}
           <a
             href="https://linkedin.com/in/eva-nagengast-9b78b220a"
@@ -22,8 +21,8 @@ function App() {
             rel="noreferrer"
           >
             Eva Nagengast
-          </a>
-          , open sourced on{" "}
+          </a>{" "}
+          open sourced on{" "}
           <a
             href="https://github.com/EvaNagengast/dictionary"
             target="_blank"
