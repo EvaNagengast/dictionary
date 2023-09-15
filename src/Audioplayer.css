@@ -5,11 +5,10 @@
 }
 
 .rhap_container {
-  height: 100px;
+  height: 140px;
   width: 40%;
   margin: 0 auto;
-  padding: 0;
-
+  padding: 0 20px 0 0;
   text-align: center;
 }
 .rhap_container,

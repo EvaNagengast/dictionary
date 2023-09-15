@@ -1,6 +1,7 @@
 .Resultbox {
   width: 70%;
   margin: 0 auto;
+  box-shadow: 2px 2px 8px #dbb3b78b;
   background-color: var(---webOne);
 }
 .Resultbox h3 {
@@ -10,7 +11,8 @@
 }
 
 .Resultbox p {
-  font-size: 20px;
   line-height: 1.3;
+  font-size: 20px;
+
   color: var(---primeDark);
 }

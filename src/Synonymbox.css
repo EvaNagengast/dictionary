@@ -1,3 +1,7 @@
 .Synonymbox {
   color: var(---primeTwo);
+  line-height: 1.1;
+}
+.Synonymbox strong {
+  text-decoration: underline;
 }

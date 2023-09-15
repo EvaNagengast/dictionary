@@ -3,11 +3,13 @@ import "./Synonymbox.css";
 export default function Synonymbox(props) {
   if (props.synonyms.synonyms) {
     return (
-      <div className="Synonymbox"><strong>  synonyms:</strong> {" "}
+      <div className="Synonymbox">
+        <strong> synonyms:</strong>{" "}
         {props.synonyms.synonyms.map(function (synonyms, index) {
           return (
-            <span key={index}>
-           {synonyms}{"  "}
+            <span key={index} className="px-2">
+              {synonyms}
+              {"  "}
             </span>
           );
         })}

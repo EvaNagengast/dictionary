@@ -10,6 +10,7 @@ if(props.link){  return (
       <AudioPlayer
         src={props.link}
         autoPlay={false}
+      header={props.text}
         showJumpControls={false}
         customVolumeControls={[]}
         customAdditionalControls={[]}
