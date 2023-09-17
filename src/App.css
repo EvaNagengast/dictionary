@@ -1,5 +1,6 @@
 .App header {
   min-height: 150px;
+  width: 100%;
 }
 
 .App header h1 {
@@ -38,4 +39,23 @@
   width: fit-content;
   background-color: #fff8ecdb;
   box-shadow: 2px 2px 8px #dbb3b78b;
+}
+
+@media (max-width: 480px) {
+  .App header h1 {
+    font-size: 50px;
+  }
+  .App footer {
+    max-height: 100px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .App header h1 {
+    font-size: 70px;
+  }
+  .App footer {
+    max-height: 120px;
+    font-size: 16px;
+  }
 }

@@ -5,15 +5,15 @@ function App() {
   return (
     <div className="App">
       <header className="p-4 text-center">
-        <div className="headercontent p-4">
+        <div className="headercontent p-3 p-sm-4">
           <h1>Dictionary</h1>
         </div>
       </header>
-      <main className="container">
+      <main className="container p-0">
         <Dictionary />
       </main>
-      <footer className="p-3">
-        <div className="footercontent p-1">
+      <footer className="p-2 p-sm-3">
+        <div className="footercontent p-1 text-center">
           coded with love by{" "}
           <a
             href="https://linkedin.com/in/eva-nagengast-9b78b220a"
@@ -22,6 +22,7 @@ function App() {
           >
             Eva Nagengast
           </a>{" "}
+          <br className="d-block d-sm-none" />
           open sourced on{" "}
           <a
             href="https://github.com/EvaNagengast/dictionary"

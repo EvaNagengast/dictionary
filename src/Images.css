@@ -6,3 +6,14 @@
   filter: grayscale(1) opacity(0.6) drop-shadow(0 0 0 var(---addOnOne));
   box-shadow: 2px 2px 8px #b0d7ab;
 }
+
+@media (max-width: 480px) {
+  .Images img {
+    width: 30%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .Images img {
+    width: 32%;
+  }
+}

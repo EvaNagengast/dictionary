@@ -36,7 +36,7 @@ export default function Dictionary() {
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchItem}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
     // documentation:
-    let imageApiKey = `E0HKlVMVFcl9f4macR9LermS6hSsfevqc8eoPtW2g7KSVO3TfuyLFIYu`;
+    let imageApiKey = `68c9ef64a34aca6bcd501b08f5caotf8`;
     let imageApiUrl = `https://api.pexels.com/v1/search?query=${searchItem}&per_page=3`;
     let headers = { Authorization: `${imageApiKey}` };
     axios.get(imageApiUrl, { headers: headers }).then(handleImageResponse);
@@ -51,7 +51,7 @@ export default function Dictionary() {
     return (
       <div className="Dictionary">
         <form onSubmit={handleSubmit} className="mt-3 text-center">
-          <label className="d-block m-3">
+          <label className="d-block m-2 m-sm-4">
             what word are you looking for today?
           </label>
           <input
@@ -63,7 +63,7 @@ export default function Dictionary() {
           />
           <input type="submit" value="go" className="inputButton mx-3" />
         </form>
-        <h2>{wordInfo.word}</h2>
+        <h2 className={"m-1"}>{wordInfo.word}</h2>
         <Phonetics wordinfo={wordInfo} />
         <Results wordinfo={wordInfo} />
         <Images image={images} />

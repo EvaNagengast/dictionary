@@ -13,6 +13,37 @@
 .Resultbox p {
   line-height: 1.3;
   font-size: 20px;
-
   color: var(---primeDark);
+}
+
+@media (max-width: 480px) {
+  .Resultbox {
+    width: 85%;
+  }
+  .Resultbox h3 {
+    font-size: 28px;
+  }
+  .Resultbox p {
+    line-height: 1.1;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .Resultbox {
+    width: 80%;
+  }
+  .Resultbox h3 {
+    font-size: 34px;
+  }
+  .Resultbox p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .Resultbox {
+    width: 75%;
+  }
+  .Resultbox h3 {
+    font-size: 38px;
+  }
 }

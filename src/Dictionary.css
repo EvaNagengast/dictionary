@@ -1,5 +1,5 @@
 .Dictionary form {
-  font-size: 20px;
+  font-size: 25px;
 }
 .Dictionary h2 {
   text-align: center;
@@ -24,6 +24,35 @@
   box-shadow: 1px 1px 6px #dbb3b78b;
 }
 .Dictionary .error {
-  font-size: 25px;
+  font-size: 30px;
   color: var(---primeDark);
+}
+@media (max-width: 480px) {
+  .Dictionary h2 {
+    font-size: 50px;
+  }
+
+  .Dictionary form {
+    font-size: 17px;
+  }
+  .Dictionary .error {
+    font-size: 19px;
+  }
+}
+@media (max-width: 768px) {
+  .Dictionary h2 {
+    font-size: 60px;
+  }
+
+  .Dictionary form {
+    font-size: 20px;
+  }
+  .Dictionary .error {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Dictionary .error {
+    font-size: 25px;
+  }
 }

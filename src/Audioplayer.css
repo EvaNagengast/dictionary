@@ -38,3 +38,32 @@
 .rhap_container .rhap_progress-indicator {
   background: #e18080;
 }
+@media (max-width: 480px) {
+  .rhap_container {
+    height: 100px;
+    width: 90%;
+  }
+  .Audioplayer img {
+    height: 70px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .rhap_container {
+    height: 110px;
+    width: 80%;
+    padding: 0 10px 0 0;
+  }
+  .Audioplayer img {
+    height: 85px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .rhap_container {
+    height: 125px;
+    width: 60%;
+  }
+  .Audioplayer img {
+    height: 90px;
+  }
+}

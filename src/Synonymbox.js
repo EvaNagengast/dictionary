@@ -7,7 +7,7 @@ export default function Synonymbox(props) {
         <strong> synonyms:</strong>{" "}
         {props.synonyms.synonyms.map(function (synonyms, index) {
           return (
-            <span key={index} className="px-2">
+            <span key={index} className="px-1 px-sm-2">
               {synonyms}
               {"  "}
             </span>
