@@ -1,0 +1,8 @@
+.Images {
+  display: flex;
+  justify-content: center;
+}
+.Images img {
+  filter: grayscale(1) opacity(0.6) drop-shadow(0 0 0 var(---addOnOne));
+  box-shadow: 2px 2px 8px #b0d7ab;
+}
