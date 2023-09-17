@@ -86,7 +86,9 @@ export default function Dictionary() {
             />
             <input type="submit" value="go" className="inputButton mx-3" />
           </form>
-          <h2 className="error mt-3">your word wasn't found - try a different word</h2>
+          <h2 className="error mt-3">
+            your word wasn't found - try a different word
+          </h2>
         </div>
       );
     } else {

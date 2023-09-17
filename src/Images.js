@@ -7,7 +7,14 @@ export default function Images(props) {
     return (
       <div className="Images m-5 p-2">
         {props.image.map(function (pic, index) {
-          return <img src={pic.src.small} className="m-2 img-fluid" key={index}></img>;
+          return (
+            <img
+              src={pic.src.small}
+              className="m-2 img-fluid"
+              key={index}
+              alt="result of searchword"
+            ></img>
+          );
         })}
       </div>
     );

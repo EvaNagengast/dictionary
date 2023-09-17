@@ -23,4 +23,7 @@
   border: none;
   box-shadow: 1px 1px 6px #dbb3b78b;
 }
-.Dictionary .error {font-size: 25px; color: var(---primeDark);}
+.Dictionary .error {
+  font-size: 25px;
+  color: var(---primeDark);
+}

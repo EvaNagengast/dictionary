@@ -7,7 +7,7 @@ function App() {
       <header className="p-4 text-center">
         <div className="headercontent p-4">
           <h1>Dictionary</h1>
-               </div>
+        </div>
       </header>
       <main className="container">
         <Dictionary />

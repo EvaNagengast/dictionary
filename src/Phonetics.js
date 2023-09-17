@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Audioplayer from "./Audioplayer";
 import axios from "axios";
 
-
 export default function Phonetics(props) {
   let [phoneticWord, setPhoneticWord] = useState("fingers");
   let [loaded, setLoaded] = useState(false);
